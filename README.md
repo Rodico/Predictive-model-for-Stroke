@@ -1,4 +1,4 @@
-## Stroke Mortality Prediction Model
+# Stroke Mortality Prediction Model
 
 # Project Overview
 
