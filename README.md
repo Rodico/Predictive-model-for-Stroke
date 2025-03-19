@@ -1,6 +1,6 @@
-Stroke Mortality Prediction Model
+## Stroke Mortality Prediction Model
 
-Project Overview
+# Project Overview
 
 This repository contains a machine learning project focused on predicting the probability of death within 2 weeks after stroke. The project implements and compares various predictive models including penalized regression techniques (Ridge, Lasso, Elastic Net) and tree-based models (XGBoost).
 Dataset
@@ -10,13 +10,13 @@ The analysis is based on data from 13,063 stroke patients with known outcomes, u
 2 treatment variables
 Binary outcome: death (1) or survival (0) within 2 weeks
 
-File Structure
+# File Structure
 
 assignment2025.csv: Original dataset containing stroke patient data (699 KB)
 Machine_Learning_Candidate_492838_Final.R: R script with complete analysis code (41 KB)
 Machine_Learning_Candidate_492838_Slides.pptx: PowerPoint presentation summarizing the findings (25,052 KB)
 
-Methodology
+# Methodology
 The project implements several machine learning approaches:
 Data Preparation
 
@@ -24,7 +24,7 @@ Data Preparation
 K-fold cross-validation (k=10, k=5 for XGBoost)
 Class imbalance handling (95.3% survival rate)
 
-Models Implemented
+# Models Implemented
 
 Ridge Regression (α = 0, λ = 0.046)
 
@@ -51,7 +51,7 @@ Handles non-linear relationships and class imbalance
 
 
 
-Performance Metrics
+# Performance Metrics
 
 AUC (Area Under ROC Curve)
 Sensitivity (TP/(TP+FN)) - ability to detect deaths
@@ -59,30 +59,28 @@ Specificity (TN/(TN+FP)) - ability to identify survivors
 F1 Score - harmonic mean of precision and recall
 Balanced Accuracy - average of sensitivity and specificity
 
-Key Findings
+# Key Findings
 
 Elastic Net regression achieved the best overall performance (AUC: 0.816)
 Different models show trade-offs between sensitivity and specificity
 Most important predictors include:
 
-Stroke subtype
+# Stroke subtype
 Consciousness level
 Age
 Treatment variables
 Specific symptoms
 
 
-
-Requirements
+# Requirements
 The analysis was performed using R with the following packages:
 
 Data manipulation: tidyverse, dplyr
 Visualization: ggplot2, ggcorrplot, GGally
 Machine learning: glmnet, mboost, xgboost, randomForest
 Model evaluation: caret, pROC
-Class imbalance handling: smotefamily
 
-Usage
+# Usage
 
 Clone this repository
 Ensure all required R packages are installed
